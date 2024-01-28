@@ -1,0 +1,56 @@
+.primary-color {
+    color: #5c8d26;
+    text-shadow: 0 0 5px #333;
+}
+
+.secondary-color {
+    color: #0a0b0a;
+    /* text-shadow: 0 0 5px #333; */
+}
+
+.tertiary-color {
+    color: #f2faeb;
+    text-shadow: 0 0 5px #333;
+}
+
+.quaternary-color {
+    color: #84ad5e;
+    text-shadow: 0 0 5px #333;
+}
+
+.quinary-color {
+    color: #989e92;
+    text-shadow: 0 0 5px #333;
+}
+
+.senary-color {
+    color: #a0c184;
+    text-shadow: 0 0 5px #333;
+}
+
+.septenary-color {
+    color: #c0cdb6;
+    text-shadow: 0 0 5px #333;
+}
+
+.octonary-color {
+    color: #b7d09f;
+    text-shadow: 0 0 5px #333;
+}
+
+/* Estilo base del botón */
+.custom-btn-effect-1 {
+    color: #f2faeb; /* Color del texto */
+    background-color: #5c8d26; /* Color de fondo */
+    transition: background-color 0.3s; /* Transición para el efecto hover */
+}
+
+/* Estilo para el hover del botón */
+.custom-btn-effect-1:hover {
+    background-color: #84ad5e; /* Cambio de color de fondo en el hover */
+}
+
+.custom-btn-effect-1:active {
+    color: #f2faeb; /* Mantener el color de texto blanco al presionar */
+}
+

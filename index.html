@@ -30,6 +30,8 @@
 		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+		<script href="vendor/jquery.validation/jquery.validate.min.js"></script>
+		<script src="js/views/view.contact.js"></script>
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="css/theme.css">
@@ -46,6 +48,16 @@
 
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				if (window.location.hash) {
+					var hash = window.location.hash;
+					window.location.hash = "";
+					window.scrollTo(0, 0);
+					window.location.hash = hash;
+				}
+			};
+		</script>
 
 	</head>
 	<body data-plugin-scroll-spy data-plugin-options="{'target': '.wrapper-spy'}">
@@ -77,17 +89,17 @@
 													</li>
 													<li>
 														<a class="nav-link" href="#who-we-are" data-hash data-hash-offset="0" data-hash-offset-lg="32">
-															Quienes somos
+															Who We Are
 														</a>
 													</li>
 													<li>
 														<a class="nav-link" href="#what-we-do" data-hash data-hash-offset="0" data-hash-offset-lg="32">
-															Que hacemos
+															What We Do
 														</a>
 													</li>
 													<li>
 														<a class="nav-link" href="#cases" data-hash data-hash-offset="0" data-hash-offset-lg="32">
-															Portafolio
+															Portfolio
 														</a>
 													</li>
 													<!-- <li>
@@ -102,7 +114,7 @@
 													</li> -->
 													<li>
 														<a class="nav-link" href="#contactanos" data-hash>
-															Contáctanos
+															Contact Us
 														</a>
 													</li>
 												</ul>
@@ -158,17 +170,17 @@
 										<div class="row justify-content-start align-items-center h-100">
 											<div class="col-lg-7 text-center text-sm-start mb-4 pb-5 pb-lg-0">
 												<h2 class="octonary-color font-weight-semibold text-3 text-sm-4 line-height-1 positive-ls-2 mb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-													SERVICIOS ESPECIALIZADOS A:
+													SPECIALIZED SERVICES TO:
 												</h2>
 												<h1 class="d-inline-block tertiary-color font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-													Desarrollo Web
+													Web development
 													<span class="custom-highlight-text-1 alternative-font-3 text-color-primary d-none d-md-block">
 														<span data-plugin-animated-letters data-plugin-options="{'startDelay': 2200, 'minWindowWidth': 0}">Responsive</span> 
 													</span>
 												</h1>
-												<p class="text-4 septenary-color w-sm-75pct pe-md-5 pe-lg-0 pe-xl-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400"> La forma más fácil de llevar tu negocio o emprendimiento al mundo digital en tiempo record. </p>
+												<p class="text-4 septenary-color w-sm-75pct pe-md-5 pe-lg-0 pe-xl-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400"> The easiest way to take your business or venture to the digital world in record time. </p>
 												<a href="#who-we-are" class="btn btn-gradient custom-btn-effect-1 custom-border-radius-1 d-inline-flex align-items-center font-weight-semibold text-3-5 btn-px-5 btn-py-3 appear-animation" data-hash data-hash-offset="0" data-hash-offset-lg="32" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" data-appear-animation-duration="1.7s">
-													COMENZAR
+													GET STARTED
 													<img width="15" height="15" src="img/demos/one-page-agency/icons/arrow-down.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'removeClassAfterInit': 'fadeIn', 'extraClass': 'svg-fill-color-light position-relative bottom-1 ms-4'}" />
 												</a>
 											</div>
@@ -183,17 +195,17 @@
 										<div class="row justify-content-start align-items-center h-100">
 											<div class="col-lg-7 text-center text-sm-start mb-4 pb-5 pb-lg-0">
 												<h2 class="octonary-color font-weight-semibold text-3 text-sm-4 line-height-1 positive-ls-2 mb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-													SERVICIOS ESPECIALIZADOS A:
+													SPECIALIZED SERVICES TO:
 												</h2>
 												<h1 class="d-inline-block tertiary-color font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-													Desarrollo Mobile
+													Mobile Development
 													<span class="custom-highlight-text-1 alternative-font-3 octonary-color d-none d-md-block">
 														<span data-plugin-animated-letters data-plugin-options="{'startDelay': 2200, 'minWindowWidth': 0}">UX/UI</span> 
 													</span>
 												</h1>
-												<p class="text-4 septenary-color w-sm-75pct pe-md-5 pe-lg-0 pe-xl-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">Enfocados en la creación de aplicaciones móviles nativas que satisfagan las necesidades y requisitos de nuestros clientes desde sus dispositivos móviles.  </p>
+												<p class="text-4 septenary-color w-sm-75pct pe-md-5 pe-lg-0 pe-xl-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">Focused on creating native mobile applications that satisfy the needs and requirements of our clients from their mobile devices.  </p>
 												<a href="#who-we-are" class="btn btn-gradient custom-btn-effect-1 custom-border-radius-1 d-inline-flex align-items-center font-weight-semibold text-3-5 btn-px-5 btn-py-3 appear-animation" data-hash data-hash-offset="0" data-hash-offset-lg="32" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" data-appear-animation-duration="1.7s">
-													COMENZEMOS
+													GET STARTED
 													<img width="15" height="15" src="img/demos/one-page-agency/icons/arrow-down.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'removeClassAfterInit': 'fadeIn', 'extraClass': 'svg-fill-color-light position-relative bottom-1 ms-4'}" />
 												</a>
 											</div>
@@ -219,15 +231,15 @@
 						<div class="row align-items-center justify-content-center">
 							<div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
 								<div class="overflow-hidden">
-									<h2 class="text-color-primary font-weight-semibold text-3 line-height-7 positive-ls-2 mb-0 appear-animation" data-appear-animation="maskUp">NOSOTROS</h2>
+									<h2 class="text-color-primary font-weight-semibold text-3 line-height-7 positive-ls-2 mb-0 appear-animation" data-appear-animation="maskUp">ABOUT US</h2>
 								</div>
 								<div class="overflow-hidden mb-3">
-									<h3 class="text-color-dark font-weight-bold text-transform-none line-height-1 text-10 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Quienes somos</h3>
+									<h3 class="text-color-dark font-weight-bold text-transform-none line-height-1 text-10 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Who We Are</h3>
 								</div>
-								<p class="text-color-dark custom-font-secondary text-5-5 line-height-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Somos un equipo de desarrolladores y diseñadores UX/UI enfocado en la creación de aplicaciones web. </p>
-								<p class="text-3-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Nuestro propósito es cumplir con todos los requerimientos y peticiones de nuestros clientes para entregarles su producto de la manera más efectiva y rápida posible. </p>
+								<p class="text-color-dark custom-font-secondary text-5-5 line-height-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">We are a team of UX/UI developers and designers focused on creating web applications. </p>
+								<p class="text-3-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">Our purpose is to meet all the requirements and requests of our clients to deliver their product in the most effective and fast way possible. </p>
 								<a href="#what-we-do" class="d-inline-flex align-items-center text-color-primary font-weight-bold text-4 text-decoration-none custom-link-effect-1 appear-animation" data-hash data-hash-offset="0" data-hash-offset-lg="32" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-									Más información
+									Find Out More
 									<img width="15" height="15" src="img/demos/one-page-agency/icons/arrow-down.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'removeClassAfterInit': 'fadeIn', 'extraClass': 'svg-fill-color-primary ms-2'}" />
 								</a>
 							</div>
@@ -281,32 +293,32 @@
 					<div class="container pt-5 mt-2">
 						<div class="row justify-content-center">
 							<div class="col-lg-7 col-xl-5 pe-lg-5 pe-xl-0 pb-lg-5 mb-5 mb-xl-0">
-								<h2 class="text-color-primary font-weight-semibold text-3 positive-ls-2 mb-0">NUESTROS SERVICIOS</h2>
-								<h3 class="text-color-dark font-weight-bold text-transform-none text-10 mb-5">Desarrollo enfocado a:</h3>
+								<h2 class="text-color-primary font-weight-semibold text-3 positive-ls-2 mb-0">OUR SERVICES</h2>
+								<h3 class="text-color-dark font-weight-bold text-transform-none text-10 mb-5">Development focused on:</h3>
 								<div class="pe-5">
 									<div class="d-flex">
 										<img width="65" height="65" src="img/demos/one-page-agency/icons/seo-edit.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
 										<div class="ms-4">
-											<h4 class="font-weight-bold text-5 mb-2">Diseño UX/UI (Web & Mobile)</h4>
-		  									<p class="mb-4">Antes de desarrollar una buena aplicación, es fundamental considerar el resultado final y los puntos principales a abordar. </p>
+											<h4 class="font-weight-bold text-5 mb-2">UX/UI Design (Web & Mobile)</h4>
+		  									<p class="mb-4">Before developing a good application, it is essential to consider the final result and the main points to be addressed. </p>
 										</div>
 									</div>
 									<div class="d-flex my-3">
 										<img width="65" height="65" src="img/demos/one-page-agency/icons/seo-notebook.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
 										<div class="ms-4">
-											<h4 class="font-weight-bold text-5 mb-2">Desarrollo Web</h4>
-		  									<p class="mb-4">Tenemos un amplio conocimiento y experiencia en la creación de una variedad de sitios web, utilizando tanto tecnologías de Código(React, Vue, HTML5...) como de NoCode(Wordpress). </p>
+											<h4 class="font-weight-bold text-5 mb-2">Web development</h4>
+		  									<p class="mb-4">We have extensive knowledge and experience in creating a variety of websites, using both Code (React, Vue, HTML5...) and NoCode (Wordpress) technologies. </p>
 										</div>
 									</div>
 									<div class="d-flex">
 										<img width="65" height="65" src="img/demos/one-page-agency/icons/seo-phone-tablet.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
 										<div class="ms-4">
-											<h4 class="font-weight-bold text-5 mb-2">Desarrollo Mobile</h4>
-		  									<p class="mb-4">Contamos con amplia experiencia en el desarrollo de aplicaciones móviles, utilizando tanto tecnologías nativas(Kotlin & Swift) y hibridas(React-native & Flutter). </p>
+											<h4 class="font-weight-bold text-5 mb-2">Mobile Apps</h4>
+		  									<p class="mb-4">We have extensive experience in developing mobile applications, using both native (Kotlin & Swift) and hybrid (React-native & Flutter) technologies.</p>
 										</div>
 									</div>
 			 						<a href="#contactanos" class="d-inline-flex align-items-center text-color-primary font-weight-bold text-4 text-decoration-none custom-link-effect-1" data-hash>
-										Contáctanos
+										Contact Us
 										<img width="15" height="15" src="img/demos/one-page-agency/icons/arrow-down.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'removeClassAfterInit': 'fadeIn', 'extraClass': 'svg-fill-color-primary ms-2'}" />
 									</a>
 		 						</div>
@@ -327,9 +339,9 @@
 								<div class="col-lg-5 col-xl-7 ps-0 ps-sm-5 pe-0 pt-lg-5 pt-xl-0 mt-lg-5 mt-xl-0">
 									<div class="position-relative">
 										<div class="position-absolute top-50pct transform3dy-n50 z-index-1" style="right: 80%;">
-											<img src="img/cell.png" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" alt="" />
+											<img src="img/Banner3.webp" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" alt="" style="border-radius: 15px;"/>
 										</div>
-										<img src="img/a1.png" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInUpShorter" alt="" style="width: 90%; border-radius: 15px;"/>
+										<img src="img/Banner.webp" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInUpShorter" alt="" style="width: 90%; border-radius: 15px;"/>
 									</div>
 								</div>
 								
@@ -584,10 +596,10 @@
 						<div class="row mb-2">
 							<div class="col">
 								<div class="overflow-hidden">
-									<h2 class="text-color-primary font-weight-semibold line-height-7 text-3 positive-ls-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">PROYECTOS</h2>
+									<h2 class="text-color-primary font-weight-semibold line-height-7 text-3 positive-ls-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">PROJECTS</h2>
 								</div>
 								<div class="overflow-hidden mb-4">
-									<h3 class="text-color-dark font-weight-bold text-transform-none line-height-1 text-10 pe-1 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">Portafolio</h3>
+									<h3 class="text-color-dark font-weight-bold text-transform-none line-height-1 text-10 pe-1 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">Portfolio</h3>
 								</div>
 							</div>
 						</div>
@@ -600,11 +612,11 @@
 												<div class="card border-0 border-radius-0 p-1">
 													<div class="card-body p-3 z-index-1">
 														<img class="card-img-top border-radius-0 opacity-hover-8 mb-2" src="img/case-1.png" alt="Card Image">
-														<p class="text-uppercase text-color-default text-1 mb-1">SITIO WEB</p>
+														<p class="text-uppercase text-color-default text-1 mb-1">WEBSITE</p>
 														<div class="card-body p-0">
 															<h4 class="card-title text-6 text-color-dark text-color-hover-primary font-weight-bold pb-1 mb-2">Veneserving Website</h4>
-															<p class="card-text text-3-5 mb-2">Prestación de Servicios Profesionales altamente especializados en sistemas de Seguridad y Salud laboral...</p>
-															<button class="btn btn-link font-weight-semibold text-decoration-none text-2 ps-0 pb-1">VER MÁS</button>
+															<p class="card-text text-3-5 mb-2">Provision of highly specialized Professional Services in occupational Health and Safety systems...</p>
+															<button class="btn btn-link font-weight-semibold text-decoration-none text-2 ps-0 pb-1">VIEW MORE</button>
 														</div>
 													</div>
 												</div>
@@ -617,11 +629,11 @@
 												<div class="card border-0 border-radius-0 p-1">
 													<div class="card-body p-3 z-index-1">
 														<img class="card-img-top border-radius-0 opacity-hover-8 mb-2" src="img/case-2.webp" alt="Card Image">
-														<p class="text-uppercase text-color-default text-1 mb-1">APP MOBILE</p>
+														<p class="text-uppercase text-color-default text-1 mb-1">MOBILE APP</p>
 														<div class="card-body p-0">
 															<h4 class="card-title text-6 text-color-dark text-color-hover-primary font-weight-bold pb-1 mb-2">24Siete App</h4>
-															<p class="card-text text-3-5 mb-2">Directorio médico que te permite buscar y contactar médicos especialistas en Venezuela de forma rápida y sencilla....</p>
-															<button class="btn btn-link font-weight-semibold text-decoration-none text-2 ps-0 pb-1">VER MÁS</button>
+															<p class="card-text text-3-5 mb-2">Medical directory that allows you to search and contact specialist doctors in Venezuela quickly and easily...</p>
+															<button class="btn btn-link font-weight-semibold text-decoration-none text-2 ps-0 pb-1">VIEW MORE</button>
 														</div>
 													</div>
 												</div>
@@ -637,8 +649,8 @@
 														<p class="text-uppercase text-color-default text-1 mb-1">LANDING PAGE</p>
 														<div class="card-body p-0">
 															<h4 class="card-title text-6 text-color-dark text-color-hover-primary font-weight-bold pb-1 mb-2">Lopcymat-Veneserving</h4>
-															<p class="card-text text-3-5 mb-2">Landing page creada con propositos estrategicos de marketing y posicionamiento(SEO)...</p>
-															<button class="btn btn-link font-weight-semibold text-decoration-none text-2 ps-0 pb-1">VER MÁS</button>
+															<p class="card-text text-3-5 mb-2">Landing page created for strategic marketing and positioning purposes (SEO)...</p>
+															<button class="btn btn-link font-weight-semibold text-decoration-none text-2 ps-0 pb-1">VIEW MORE</button>
 														</div>
 													</div>
 												</div>
@@ -651,7 +663,7 @@
 					</div>
 				</section>
 
-				<section id="contactanos" class="section bg-transparent border-0 m-0">
+				<section class="section bg-transparent border-0 m-0">
 					<div class="container py-4">
 						<div class="row align-items-center text-center">
 							<div class="col-sm-4 col-xl-2 mb-5 mb-xl-0">
@@ -675,28 +687,29 @@
 						</div>
 					</div>
 				</section>
-				<div id="contactanos">
-				<section class="section parallax border-0 p-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'scrollableParallax': true, 'scrollableParallaxMinWidth': 991, 'startOffset': 5, 'cssProperty': 'width', 'cssValueStart': 40, 'cssValueEnd': 100, 'cssValueUnit': 'vw'}" data-image-src="img/blank.gif">
+
+				
+				<section id="contactanos" class="section parallax border-0 p-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'scrollableParallax': true, 'scrollableParallaxMinWidth': 991, 'startOffset': 5, 'cssProperty': 'width', 'cssValueStart': 40, 'cssValueEnd': 100, 'cssValueUnit': 'vw'}" data-image-src="img/blank.gif">
 					<div class="d-flex justify-content-center">
 						<div class="scrollable-parallax-wrapper bg-gradient overflow-hidden">
-							<div class="container custom-container-style-3 custom-container-position-1 py-5 mx-0">
+							<div class="container custom-container-style-3 custom-container-position-1 py-5 mx-0 my-5">
 								<div class="row align-items-center">
 									<div class="col-lg-6 mb-5 mb-lg-0">
-										<img src="img/Mockups.png" alt="" class="img-fluid" />
+										<img src="img/Mockups1.png" alt="" class="img-fluid" />
 									</div> 
 									<div class="col-lg-6">
-										<h3 class="text-color-light font-weight-semibold text-3 positive-ls-2 mb-0">COMENZEMOS</h3>
-										<h2 class="text-color-light font-weight-bold text-transform-none text-10 mb-3">Contrata nuestros servicios</h2>
-										<p class="text-color-light custom-font-secondary text-5-5 line-height-5 mb-3">Al adquirir nuestros servicios, recibirás mockups sin ningún costo adicional.</p>
-										<p class="text-color-light font-weight-light text-3-5 pb-1 mb-4">Comunícate con nosotros. Diseñaremos el plan que necesitas para transformar tu sitio web, landing page o aplicación en herramientas productivas y rentables comercialmente.</p>
-										<a href="https://wa.me/584121149207" target="_blank" class="btn btn-dark custom-border-radius-1 font-weight-semibold box-shadow-4 text-3-5 btn-px-5 py-3">CONTACTO</a>
+										<h3 class="text-color-light font-weight-semibold text-3 positive-ls-2 mb-0">GET READY NOW</h3>
+										<h2 class="text-color-light font-weight-bold text-transform-none text-10 mb-3">Hire our services</h2>
+										<p class="text-color-light custom-font-secondary text-5-5 line-height-5 mb-3">By purchasing our services, you will receive mockups at no additional cost.</p>
+										<p class="text-color-light font-weight-light text-3-5 pb-1 mb-4">Contact us. We will design the plan you need to transform your website, landing page or application into productive and commercially profitable tools.</p>
+										<a href="https://wa.me/584121149207" target="_blank" class="btn btn-dark custom-border-radius-1 font-weight-semibold box-shadow-4 text-3-5 btn-px-5 py-3">CONTACT</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-			</div>
+				
 
 				<!-- <section id="our-team" class="section section-height-3 bg-transparent border-0 m-0">
 					<div class="container pb-4">
@@ -880,6 +893,68 @@
 					</div>
 				</section> -->
 
+				<div class="map-above" style="min-height: 600px; background-image: url('img/formulario.webp'); background-size: cover;">
+
+					<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+
+					<section class="map-above-content section border-0 m-0 p-0">
+						<div class="container pt-3 pt-sm-5 pt-md-0">
+							<div class="row">
+								<div class="col-md-8 col-lg-6">
+									<div class="bg-dark p-5">
+										<div class="d-flex mt-4 mb-4">
+											<img width="40" height="40" src="img/demos/one-page-agency/icons/location.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light mt-1'}" />
+											<p class="text-color-light ms-2 mb-0">
+												<strong class="d-block text-5 mb-1">Villa Caroni, Ciudad Bolívar, VZ</strong>
+												<a href="#" class="d-inline-block text-color-light text-decoration-underline-2 font-weight-semibold text-3-5 opacity-hover-9">GET DIRECTIONS</a>
+											</p>
+										</div>
+										<div class="d-flex align-items-center pb-2 mb-4">
+											<img width="40" height="40" src="img/demos/one-page-agency/icons/phone.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+											<a href="tel:1234657890" class="d-inline-block text-color-light font-weight-bold text-decoration-none text-4 opacity-hover-9 ms-2">(+58) 412-1149207</a>
+										</div>
+										<form class="contact-form form-fields-size-md form-style-3 form-errors-light mb-2" action="https://formspree.io/f/mqkrenyb" method="POST">
+											<div class="contact-form-success alert alert-success d-none mt-4">
+												<strong>Success!</strong> Your message has been sent to us.
+											</div>
+
+											<div class="contact-form-error alert alert-success d-none mt-4">
+												<strong>Success!</strong> Your message has been sent to us.
+											</div>
+
+											<input type="hidden" name="subject" value="Contact Message Received" />
+											<div class="row">
+												<div class="form-group col">
+													<input type="text" class="form-control" name="name" value="" placeholder="First Name" required>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group col">
+													<input type="email" class="form-control" name="email" value="" placeholder="E-mail Address" required>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group col">
+													<textarea class="form-control custom-textarea-style" rows="3" name="message" placeholder="Message" required></textarea>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col">
+													<button type="submit" class="btn btn-gradient custom-border-radius-1 font-weight-semibold box-shadow-4 text-3-5 btn-px-5 btn-py-3" data-loading-text="Loading...">
+														<span class="px-3">SUBMIT</span>
+													</button>
+												</div>
+											</div>
+										</form>
+											
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+
 			</div>
 		</div>
 		<footer id="footer" class="border-0 m-0 p-0">
@@ -890,7 +965,7 @@
 							<div class="d-flex align-items-center">
 								<div class="d-none d-sm-inline-flex align-items-center border border-top-0 border-bottom-0 border-start-0 pe-4">
 									<i class="far fa-clock text-4"></i>
-									<span class="font-weight-medium mx-2"> Mon - Sat 9:00am - 6:00pm</span>
+									<span class="font-weight-medium mx-2"> Mon - Sun 9:00am - 11:00pm</span>
 								</div>
 								<!-- <ul class="social-icons social-icons-clean social-icons-medium ms-sm-4">
 									<li class="social-icons-facebook">
